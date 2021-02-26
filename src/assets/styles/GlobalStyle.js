@@ -2,14 +2,14 @@
 import { createGlobalStyle } from "styled-components";
 import { mediaQueries } from "./mediaQueries";
 
-
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 export const GlobalStyles = createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 
 
 *,
@@ -109,10 +109,10 @@ input {
 
 // Slick css
 
-/* .slick-dots {
+.slick-dots {
   position: relative;
-    bottom: 5px;
-    right: 3px;
+    bottom: -50px;
+    right: 63px;
     display: block;
     width: 220px;
     padding: 0;
@@ -123,14 +123,14 @@ input {
 
 .slick-dots li button:before{
     font-size: 10px;
-    /* width: 150px; */
+    width: 150px;
     margin: auto;
-   color: #4EABA4;
+   color: #F9BA20;
 }        
 
 .Control-bar {
   display: none;
-} */
+}
 
 `;
 

@@ -9,7 +9,7 @@ export const SectionBackground = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 70px;
-    margin: 50px 0px 0px;
+    margin: 0px 0px 0px;
 
 `;
 

@@ -119,6 +119,10 @@ export const OrderButton = styled(motion.button)`
   @media (min-width: 768px) {
     font-size: 24px;
   }
+
+  a {
+    color: white;
+  }
 `;
 
 export const SafeDeliveryContainer = styled.div`

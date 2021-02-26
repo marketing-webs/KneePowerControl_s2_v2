@@ -5,9 +5,9 @@ const StyledBold = styled.div`
 display: inline-block;
 `
 
-const Bold = ({ children }) => {
+const Bold = ({ children }, ...props) => {
     return (
-        <StyledBold>
+        <StyledBold as={props.spanItem}>
             {children}
         </StyledBold>
     )

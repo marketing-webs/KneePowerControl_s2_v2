@@ -15,7 +15,7 @@ export const MainTitle = styled.h2`
     text-align: center;
     text-shadow: none;
     color: ${({ theme }) => theme.colors.black};
-    margin: 0px auto 40px;
+    margin: 20px auto 40px;
     width: 95%;
 
     ${mediaQueries("xs")`

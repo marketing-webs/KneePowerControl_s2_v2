@@ -26,13 +26,23 @@ export const MainTitle = styled.h2`
 
     ${mediaQueries("xs")`
         font-size: 40px;
-        width: 40%;
+        width: 45%;
         margin: 40px auto 40px;
     `}
 
     span {
         color: ${({ theme }) => theme.colors.green};
     }
+`;
+
+export const SecondTitle = styled.h3`
+    text-align: center;
+    margin: 0px auto 30px;
+    font-size: 16px;
+    
+    ${mediaQueries("sm")`
+        font-size: 26px;
+    `}
 `;
 
 export const CardWrapper = styled.div`
@@ -74,12 +84,8 @@ export const StyledCard = styled.div`
     div {
         text-align: left;
         font-size: 14px;
-        @media (min-width: 768px) {
-            font-size: 16px;
-        }
-
-        span {
-            margin-top: 10px;
+        margin-bottom: 5px;
+        margin-top: 10px;
             position: relative;
 
             ::before {
@@ -91,6 +97,9 @@ export const StyledCard = styled.div`
 
                 color: ${({ theme }) => theme.colors.gold}
             }
+
+        @media (min-width: 768px) {
+            font-size: 16px;
         }
     }
 `;

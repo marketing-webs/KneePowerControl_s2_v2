@@ -5,11 +5,11 @@ import Arrow from "../../assets/images/Arrow.png"
 
 
 export const SectionBackground = styled.div`
-    padding: 70px 0px;
+    padding: 70px 0px 0px;
     overflow-x: hidden;
     background-image: linear-gradient(
-    to bottom,
-    #FFF5DE,
+    to right,
+    #FFE5A7,
     #FFF5DE,
     #FFE5A7
   );
@@ -17,7 +17,7 @@ export const SectionBackground = styled.div`
 
 export const ContentWrapper = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     ${mediaQueries("xs")`

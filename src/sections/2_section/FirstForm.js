@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
-// import { navigate } from 'gatsby'
+import { Link, Redirect } from 'react-router-dom'
+
 import styled from 'styled-components';
 import { useForm, Controller } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers';
@@ -9,6 +10,8 @@ import { FormContext } from '../../context/formContext'
 import { OrderButton } from './FormContainer.styles';
 import infoIcon from '../../assets/images/info.svg';
 import ReactTooltip from 'react-tooltip'
+import MainPage from '../../pages/MainPage'
+
 
 export const MainFormWrapper = styled.div`
   background-color: transparent;
@@ -58,12 +61,13 @@ const schema = yup.object().shape({
     .min(3, 'Minimum 3 znaki'),
 });
 
-const FirstForm = () => {
+const FirstForm = (props) => {
   const { setFirstName, setLastName, setPhoneNumber } = useContext(FormContext);
   const { control, handleSubmit, errors, getValues } = useForm({
     resolver: yupResolver(schema),
     mode: 'all',
   });
+
 
   const onSubmit = (data, e) => {
     console.log(getValues());
@@ -71,9 +75,12 @@ const FirstForm = () => {
     setLastName(data.lastName);
     setPhoneNumber(data.phoneNumber);
 
-    // setTimeout(() => {
-    //   navigate('/sets');
-    // }, 1000);
+    setTimeout(() => {
+    }, 1000);
+
+    <Redirect to="/sets" />
+
+
   };
 
   const handleChange = () => {
@@ -170,7 +177,8 @@ const FirstForm = () => {
           </ReactTooltip>
         </InputWrapper>
         <OrderButton variants={buttonVariants} animate="hover">
-          ZAMÓW TERAZ
+          {!errors.phoneNumber ? 'ZAMÓW TERAZ' : <Link to="sets">ZAMÓW TERAZ</Link>}
+          {/* ZAMÓW TERAZ */}
         </OrderButton>
       </Form>
     </MainFormWrapper>

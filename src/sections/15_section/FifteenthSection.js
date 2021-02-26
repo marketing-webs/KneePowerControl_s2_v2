@@ -1,4 +1,6 @@
 import React from 'react'
+import SliderCarousel from "./Slider"
+
 
 import {
     SectionBackground,
@@ -6,7 +8,6 @@ import {
     ContentWrapper,
 } from './FifteenthSection.styled'
 
-import SliderCarousell from './Slider'
 
 const FifteenthSection = () => {
     return (
@@ -17,7 +18,7 @@ const FifteenthSection = () => {
                     użytkowników</span> Knee Power Control, którzy pozbyli
                     się dokuczliwych problemów ze stawami:
                 </MainTitle>
-                <SliderCarousell />
+                <SliderCarousel />
             </ContentWrapper>
         </SectionBackground>
     )

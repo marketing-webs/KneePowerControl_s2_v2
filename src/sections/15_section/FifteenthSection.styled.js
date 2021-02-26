@@ -16,9 +16,11 @@ export const MainTitle = styled.h2`
     font-size: 24px;
     text-align: center;
     text-shadow: none;
+    margin: 0px 0px 50px;
 
     ${mediaQueries("xs")`
         font-size: 40px;
+        margin: 0px 0px 50px;
     `}
 
     span {
@@ -37,16 +39,8 @@ export const UnderTitle = styled.h3`
 `;
 
 export const ContentWrapper = styled.div`
-    max-width: 1199px;
+    max-width: 1227px;
     width: 98%;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 
-    /* ${mediaQueries("sm")`
-        flex-direction: row;
-    `} */
 `;

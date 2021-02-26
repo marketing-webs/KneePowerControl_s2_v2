@@ -18,6 +18,7 @@ const FourthSection = () => {
             <MainTitle>
                 W skład <span>Knee Power Control</span> wchodzi:
             </MainTitle>
+
             <ProductWrapper>
                 <FirstBox>
                     <h3>

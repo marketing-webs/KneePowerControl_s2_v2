@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { mediaQueries } from "../../assets/styles/mediaQueries"
 
 export const SectionBackground = styled.div`
-    padding: 70px 0px;
+    padding: 20px 0px;
     overflow-x: hidden;
     background-image: linear-gradient(
     to right,

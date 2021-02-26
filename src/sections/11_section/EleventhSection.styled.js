@@ -12,13 +12,13 @@ export const MainTitle = styled.h2`
     text-align: center;
     text-shadow: none;
     color: ${({ theme }) => theme.colors.black};
-    margin: 0px auto 40px;
+    margin: 20px auto 20px;
     width: 95%;
 
     ${mediaQueries("xs")`
         font-size: 40px;
         width: 80%;
-        margin: 50px auto 60px;  
+        margin: 50px auto 40px;  
     `}
 
     span {

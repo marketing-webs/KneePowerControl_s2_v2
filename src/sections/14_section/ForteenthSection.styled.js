@@ -11,7 +11,7 @@ export const SectionBackground = styled.div`
   );
 
     ${mediaQueries("sm")`
-        padding: 50px 0px;
+        padding: 50px 0px ;
     `}
 `;
 

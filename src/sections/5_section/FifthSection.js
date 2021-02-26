@@ -4,8 +4,11 @@ import {
     SectionBackground,
     MainTitle,
     CardWrapper,
-    StyledCard
+    StyledCard,
+    SecondTitle,
 } from './FifthSection.styled';
+
+import { v4 as uuidv4 } from 'uuid'
 
 import Bold from '../../assets/styles/Bold'
 
@@ -65,18 +68,21 @@ const FifthSection = () => {
                 Kuracja z Knee Power Control
                 zajmie Ci <span>jedynie 28 dni!</span>
             </MainTitle>
+            <SecondTitle>
+                Proces odbudowy stawów przebiega następująco:
+            </SecondTitle>
             <CardWrapper>
                 {
                     ListArray.map(({ id, title, icon, text }) => {
                         return (
-                            <StyledCard key={id} title={title} icon={icon}>
+                            <StyledCard key={uuidv4()} title={title} icon={icon}>
                                 <h3>
                                     {title}
                                 </h3>
                                 <img src={icon} alt="" />
-                                <div>
+                                <>
                                     {text}
-                                </div>
+                                </>
                             </StyledCard  >
                         )
                     })

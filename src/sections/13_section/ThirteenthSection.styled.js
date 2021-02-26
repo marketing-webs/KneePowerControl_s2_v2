@@ -3,8 +3,14 @@ import { mediaQueries } from "../../assets/styles/mediaQueries";
 
 export const SectionBackground = styled.div`
     overflow-x: hidden;
-    padding: 50px 0px;
+    padding: 0px 0px 40px;
     position: relative;
+
+    
+    ${mediaQueries("xs")`
+        padding: 50px 0px;
+    `}
+
 `;
 
 export const MainTitle = styled.h2`

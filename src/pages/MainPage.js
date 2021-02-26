@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Securitiy from '../components/Securitiy'
 import Hero from '../sections/1_section/Hero'
 import Header from '../components/Header/Header'
@@ -13,12 +13,33 @@ import SectionBackground from '../sections/SectionstBackground/SectionBackground
 import DoctrorWrapperSection from '../sections/DoctorWrapperSection/DoctrorWrapperSection'
 import ForteenthSection from '../sections/14_section/ForteenthSection'
 import FifteenthSection from '../sections/15_section/FifteenthSection'
+import Footer from '../sections/footer/Footer'
+
+import Modal from '../components/Modal/Modal'
 
 
 
 const MainPage = () => {
+
+    const [showModal, setShowModal] = useState(false);
+    const [mouseTouchedTop, setMouseTouchedTop] = useState(false);
+
+    const handleMouseMove = (ev) => {
+        if (ev.screenY <= 115 && !mouseTouchedTop) {
+            setMouseTouchedTop(true);
+            setShowModal(true);
+        }
+    };
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowModal(true);
+        }, 500000);
+    }, []);
+
     return (
-        <div>
+        <div onMouseMove={handleMouseMove}>
+            <Modal showModal={showModal} setShowModal={setShowModal} />
             <Securitiy />
             <Header />
             <Hero />
@@ -33,6 +54,8 @@ const MainPage = () => {
             <DoctrorWrapperSection />
             <ForteenthSection />
             <FifteenthSection />
+            <FormSection partner="partner" />
+            <Footer />
         </div>
     )
 }

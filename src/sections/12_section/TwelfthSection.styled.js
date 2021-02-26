@@ -11,7 +11,7 @@ export const MainTitle = styled.h2`
     text-align: center;
     text-shadow: none;
     color: ${({ theme }) => theme.colors.black};
-    margin: 0px auto 40px;
+    margin: 30px auto 40px;
     width: 95%;
 
     ${mediaQueries("xs")`
@@ -44,13 +44,17 @@ export const CardWrapper = styled.div`
 `;
 
 export const CardItem = styled.div`
-    width: 260px;
+    width: 100%;
     box-shadow: 0px 0px 10px 0px rgb(201 201 201);
     background-color: ${({ theme }) => theme.colors.white};
     border-radius: 15px;
     margin: 7px;
-    padding: 15px;
+    padding: 20px 15px;
     position: relative;
+
+    ${mediaQueries("xs")`
+        width: 260px;
+    `}
 
 
     img {
@@ -77,5 +81,5 @@ export const StyledIcon = styled.img`
     width: 39px;
     height: 73px;
     left: 10px;
-    top: 0px;
+    top: 10px;
 `;

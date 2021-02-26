@@ -25,6 +25,8 @@ import ProductdEescription from '../../assets/images/product-description.png'
 import FirstForm from './FirstForm'
 import CountUp from 'react-countup'
 import TimerForm from '../../components/Timer/TimerForm'
+import Partners from '../../components/Partners/Partners'
+
 
 const ListArray = [
     {
@@ -49,7 +51,9 @@ const ListArray = [
     }
 ]
 
-const FormSection = () => {
+const FormSection = (props) => {
+    const partner = props.partner;
+
 
     return (
         <SectionBackground>
@@ -113,6 +117,7 @@ const FormSection = () => {
                         </TimerWrapper>
                     </FormContentWrapper>
                 </FormBox>
+                {partner && <Partners />}
             </StyledContainer>
         </SectionBackground>
     )

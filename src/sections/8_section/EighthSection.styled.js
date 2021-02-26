@@ -11,6 +11,12 @@ export const SectionBackground = styled.div`
     #282753,
     #4F4DA5
   );
+
+  ${mediaQueries("xs")`
+        margin-bottom: 150px;
+        height: 410px;
+        overflow-x: visible;
+    `}
 `;
 
 export const MainTitle = styled.h2`
@@ -73,6 +79,7 @@ export const FirstProductWrapper = styled.div`
     height: auto;
     margin: auto;
     transform: translate(0px, 80px);
+    
 
     @media (min-width: 1240px) {
         transform: translate(70px, 40px);
@@ -95,6 +102,7 @@ export const FirstListWrapper = styled.ul`
     margin: 10px;
     padding: 70px 20px 20px 35px;
     border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgb(201 201 201);
 
     ${mediaQueries("xs")`
         padding: 40px 20px 20px 50px;
@@ -134,6 +142,7 @@ export const SecondListWrapper = styled.ul`
     margin: 10px;
     padding: 70px 20px 20px 35px;
     border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgb(201 201 201);
 
     ${mediaQueries("xs")`
         padding: 40px 20px 20px 40px;
