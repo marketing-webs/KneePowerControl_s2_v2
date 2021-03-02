@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Link, Redirect } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
 
 import styled from 'styled-components';
 import { useForm, Controller } from 'react-hook-form'
@@ -30,7 +30,13 @@ const InputWrapper = styled.div`
     background-color: white;
     border-radius: 15px;
     padding: 15px 10px;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
   }
+
 `;
 
 const StyledPopover = styled.img`
@@ -68,6 +74,7 @@ const FirstForm = (props) => {
     mode: 'all',
   });
 
+  const history = useHistory();
 
   const onSubmit = (data, e) => {
     console.log(getValues());
@@ -78,7 +85,7 @@ const FirstForm = (props) => {
     setTimeout(() => {
     }, 1000);
 
-    <Redirect to="/sets" />
+    history.push("/sets")
 
 
   };
@@ -178,8 +185,8 @@ const FirstForm = (props) => {
         </InputWrapper>
         <OrderButton variants={buttonVariants} animate="hover">
           {/* {!errors.phoneNumber ? 'ZAMÓW TERAZ' : <Link to="sets">ZAMÓW TERAZ</Link>} */}
-          <Link to="sets">ZAMÓW TERAZ</Link>
-          {/* ZAMÓW TERAZ */}
+          {/* <Link to="sets">ZAMÓW TERAZ</Link> */}
+          ZAMÓW TERAZ
         </OrderButton>
       </Form>
     </MainFormWrapper>

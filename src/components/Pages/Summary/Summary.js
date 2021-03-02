@@ -14,7 +14,7 @@ import {
 } from './Summary.styles';
 
 import orderImage from '../../../assets/images/product-boxes.png';
-import { navigate } from '../../../../.cache/gatsby-browser-entry';
+// import { navigate } from '../../../../.cache/gatsby-browser-entry';
 
 const SummaryPage = () => {
   const {
@@ -26,9 +26,11 @@ const SummaryPage = () => {
     city,
   } = useContext(FormContext);
 
-  useEffect(() => {
-    firstName <= 0 && navigate('/');
-  }, [firstName]);
+  console.log(firstName)
+  console.log(address)
+  // useEffect(() => {
+  //   firstName <= 0 && navigate('/');
+  // }, [firstName]);
 
   return (
     <SummaryPageWrapper>

@@ -13,6 +13,7 @@ import Order from './pages/Order';
 import Sets from './pages/sets';
 import { CardContextProvider } from './context/cardContext';
 import { UnitsContextProvider } from './context/unitsContext';
+import Summary from './pages/summary';
 
 function App() {
   // const { setPhoneNumber } = useContext(FormContext);
@@ -30,6 +31,7 @@ function App() {
                   {setPhoneNumber ? <Redirect to="/sets" /> : <MainPage />}
                 </Route> */}
                 <Route path="/order" component={Order} />
+                <Route path="/summary" component={Summary} />
                 <Route exact path="/" component={MainPage} />
               </Switch>
             </div>

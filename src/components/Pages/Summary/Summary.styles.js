@@ -50,6 +50,7 @@ export const SummaryDetail = styled.span`
 
 export const SummarySubtitle = styled.span`
   display: block;
+  text-align: left;
 
   &:not(:last-child) {
     margin-bottom: 20px;
@@ -65,4 +66,8 @@ export const OrderImage = styled.img`
   width: 100%;
 `;
 
-export const SummaryContainer = styled.div``;
+export const SummaryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+`;

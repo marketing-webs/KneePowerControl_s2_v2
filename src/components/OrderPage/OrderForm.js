@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers';
 import * as yup from 'yup';
 import { TextField } from '@material-ui/core';
 import { SecondaryFormWrapper, SubmitButton } from './OrderPage.styles';
 import { FormContext } from '../../context/formContext';
-// import { navigate } from 'gatsby';
+import { withRouter, useHistory } from 'react-router-dom'
 
 const zipCodeRegExp = /[0-9]{2}-[0-9]{3}/;
 
@@ -38,9 +38,13 @@ const SecondaryForm = () => {
     mode: 'all',
   });
 
+
+  let history = useHistory();
   const onSubmit = (data, e) => {
+    e.preventDefault();
     console.log(getValues());
     console.log(firstName, lastName, phoneNumber);
+    console.log(setAddress, setZipCode, setCity);
 
     if (!errors.address) {
       setAddress(getValues('address'));
@@ -54,7 +58,9 @@ const SecondaryForm = () => {
       setCity(getValues('city'));
     }
 
-    // navigate('/summary');
+    history.push("/summary");
+    console.log(history)
+
   };
 
   return (
@@ -139,4 +145,4 @@ const SecondaryForm = () => {
   );
 };
 
-export default SecondaryForm;
+export default withRouter(SecondaryForm);
