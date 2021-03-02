@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/KneePowerControl_s2_v2/static/css/main.425e24a8.chunk.css",
-    "main.js": "/KneePowerControl_s2_v2/static/js/main.b5d02283.chunk.js",
-    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.b5d02283.chunk.js.map",
-    "runtime-main.js": "/KneePowerControl_s2_v2/static/js/runtime-main.64665ac2.js",
-    "runtime-main.js.map": "/KneePowerControl_s2_v2/static/js/runtime-main.64665ac2.js.map",
+    "main.js": "/KneePowerControl_s2_v2/static/js/main.068357d5.chunk.js",
+    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.068357d5.chunk.js.map",
+    "runtime-main.js": "/KneePowerControl_s2_v2/static/js/runtime-main.13ca3b82.js",
+    "runtime-main.js.map": "/KneePowerControl_s2_v2/static/js/runtime-main.13ca3b82.js.map",
     "static/css/2.e94e6462.chunk.css": "/KneePowerControl_s2_v2/static/css/2.e94e6462.chunk.css",
-    "static/js/2.4d74ebc4.chunk.js": "/KneePowerControl_s2_v2/static/js/2.4d74ebc4.chunk.js",
-    "static/js/2.4d74ebc4.chunk.js.map": "/KneePowerControl_s2_v2/static/js/2.4d74ebc4.chunk.js.map",
-    "static/js/3.7aa54cb8.chunk.js": "/KneePowerControl_s2_v2/static/js/3.7aa54cb8.chunk.js",
-    "static/js/3.7aa54cb8.chunk.js.map": "/KneePowerControl_s2_v2/static/js/3.7aa54cb8.chunk.js.map",
+    "static/js/2.1222b273.chunk.js": "/KneePowerControl_s2_v2/static/js/2.1222b273.chunk.js",
+    "static/js/2.1222b273.chunk.js.map": "/KneePowerControl_s2_v2/static/js/2.1222b273.chunk.js.map",
+    "static/js/3.86b07b00.chunk.js": "/KneePowerControl_s2_v2/static/js/3.86b07b00.chunk.js",
+    "static/js/3.86b07b00.chunk.js.map": "/KneePowerControl_s2_v2/static/js/3.86b07b00.chunk.js.map",
     "index.html": "/KneePowerControl_s2_v2/index.html",
     "static/css/2.e94e6462.chunk.css.map": "/KneePowerControl_s2_v2/static/css/2.e94e6462.chunk.css.map",
     "static/css/main.425e24a8.chunk.css.map": "/KneePowerControl_s2_v2/static/css/main.425e24a8.chunk.css.map",
-    "static/js/2.4d74ebc4.chunk.js.LICENSE.txt": "/KneePowerControl_s2_v2/static/js/2.4d74ebc4.chunk.js.LICENSE.txt",
+    "static/js/2.1222b273.chunk.js.LICENSE.txt": "/KneePowerControl_s2_v2/static/js/2.1222b273.chunk.js.LICENSE.txt",
     "static/media/BackgroundTenis.dbacc98a.png": "/KneePowerControl_s2_v2/static/media/BackgroundTenis.dbacc98a.png",
     "static/media/Certificate.b4b30d9c.png": "/KneePowerControl_s2_v2/static/media/Certificate.b4b30d9c.png",
     "static/media/Cool-Power-Gel-cold.93ff60ea.png": "/KneePowerControl_s2_v2/static/media/Cool-Power-Gel-cold.93ff60ea.png",
@@ -31,6 +31,7 @@
     "static/media/background-5.fe45cd53.png": "/KneePowerControl_s2_v2/static/media/background-5.fe45cd53.png",
     "static/media/background-people.8f0514fe.png": "/KneePowerControl_s2_v2/static/media/background-people.8f0514fe.png",
     "static/media/chart.555310cb.png": "/KneePowerControl_s2_v2/static/media/chart.555310cb.png",
+    "static/media/close.557ef4d9.svg": "/KneePowerControl_s2_v2/static/media/close.557ef4d9.svg",
     "static/media/cure1.45994f27.png": "/KneePowerControl_s2_v2/static/media/cure1.45994f27.png",
     "static/media/cure2.f39167cd.png": "/KneePowerControl_s2_v2/static/media/cure2.f39167cd.png",
     "static/media/cure3.7888c286.png": "/KneePowerControl_s2_v2/static/media/cure3.7888c286.png",
@@ -44,6 +45,9 @@
     "static/media/leg-3.ed617d81.png": "/KneePowerControl_s2_v2/static/media/leg-3.ed617d81.png",
     "static/media/leg-4.3b54e8c5.png": "/KneePowerControl_s2_v2/static/media/leg-4.3b54e8c5.png",
     "static/media/man_right_side.c396e88e.png": "/KneePowerControl_s2_v2/static/media/man_right_side.c396e88e.png",
+    "static/media/order-background.83f987c8.jpg": "/KneePowerControl_s2_v2/static/media/order-background.83f987c8.jpg",
+    "static/media/pad_box.5e6c7516.png": "/KneePowerControl_s2_v2/static/media/pad_box.5e6c7516.png",
+    "static/media/product-boxes.7578af42.png": "/KneePowerControl_s2_v2/static/media/product-boxes.7578af42.png",
     "static/media/product-description.0bd521ae.png": "/KneePowerControl_s2_v2/static/media/product-description.0bd521ae.png",
     "static/media/product-video.a6aa5c56.mp4": "/KneePowerControl_s2_v2/static/media/product-video.a6aa5c56.mp4",
     "static/media/profesor.ad84d3ee.png": "/KneePowerControl_s2_v2/static/media/profesor.ad84d3ee.png",
@@ -53,13 +57,15 @@
     "static/media/xray1.35d18add.png": "/KneePowerControl_s2_v2/static/media/xray1.35d18add.png",
     "static/media/xray2.5c9d37d8.png": "/KneePowerControl_s2_v2/static/media/xray2.5c9d37d8.png",
     "static/media/xray3.6d6765f1.png": "/KneePowerControl_s2_v2/static/media/xray3.6d6765f1.png",
-    "static/media/xray4.0431e9f6.png": "/KneePowerControl_s2_v2/static/media/xray4.0431e9f6.png"
+    "static/media/xray4.0431e9f6.png": "/KneePowerControl_s2_v2/static/media/xray4.0431e9f6.png",
+    "static/media/zestaw-knee-power-control.0738f56a.png": "/KneePowerControl_s2_v2/static/media/zestaw-knee-power-control.0738f56a.png",
+    "static/media/zestaw-power-gel.68bf91b8.png": "/KneePowerControl_s2_v2/static/media/zestaw-power-gel.68bf91b8.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.64665ac2.js",
+    "static/js/runtime-main.13ca3b82.js",
     "static/css/2.e94e6462.chunk.css",
-    "static/js/2.4d74ebc4.chunk.js",
+    "static/js/2.1222b273.chunk.js",
     "static/css/main.425e24a8.chunk.css",
-    "static/js/main.b5d02283.chunk.js"
+    "static/js/main.068357d5.chunk.js"
   ]
 }
