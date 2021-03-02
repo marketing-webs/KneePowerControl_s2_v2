@@ -177,7 +177,8 @@ const FirstForm = (props) => {
           </ReactTooltip>
         </InputWrapper>
         <OrderButton variants={buttonVariants} animate="hover">
-          {!errors.phoneNumber ? 'ZAMÓW TERAZ' : <Link to="sets">ZAMÓW TERAZ</Link>}
+          {/* {!errors.phoneNumber ? 'ZAMÓW TERAZ' : <Link to="sets">ZAMÓW TERAZ</Link>} */}
+          <Link to="sets">ZAMÓW TERAZ</Link>
           {/* ZAMÓW TERAZ */}
         </OrderButton>
       </Form>
