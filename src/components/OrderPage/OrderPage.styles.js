@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const OrderPageWrapper = styled.div`
-  height: 100vh;
+  //height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;

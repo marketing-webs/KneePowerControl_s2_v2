@@ -26,12 +26,6 @@ const SummaryPage = () => {
     city,
   } = useContext(FormContext);
 
-  console.log(firstName)
-  console.log(address)
-  // useEffect(() => {
-  //   firstName <= 0 && navigate('/');
-  // }, [firstName]);
-
   return (
     <SummaryPageWrapper>
       <SummaryWrapper>

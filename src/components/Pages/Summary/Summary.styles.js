@@ -35,6 +35,7 @@ export const SummaryTitle = styled.h1`
 export const SummaryDetails = styled.div`
   display: inline-block;
   background-color: #fff;
+  text-align: left;
   color: #000;
   margin-bottom: 20px;
   padding: 20px;
@@ -46,6 +47,7 @@ export const SummaryDetails = styled.div`
 
 export const SummaryDetail = styled.span`
   display: block;
+  margin-top: 5px;
 `;
 
 export const SummarySubtitle = styled.span`
