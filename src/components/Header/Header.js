@@ -42,7 +42,7 @@ const Header = () => {
         </QuantityNumber>
         </QuantityLeftWrapper>
         <ButtonDiscountWrapper>
-          <StyledButtonWithScroll to="section13" mainText="ODBIEŻ ZNIŻKĘ" />
+          <StyledButtonWithScroll to="partner" mainText="ODBIEŻ ZNIŻKĘ" />
         </ButtonDiscountWrapper>
 
 

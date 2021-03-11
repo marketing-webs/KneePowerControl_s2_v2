@@ -54,7 +54,7 @@ const MainPage = () => {
             <DoctrorWrapperSection />
             <ForteenthSection />
             <FifteenthSection />
-            <FormSection partner="partner" />
+            <FormSection partner="partner" id="partner"/>
             <Footer />
         </div>
     )

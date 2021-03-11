@@ -84,7 +84,7 @@ const FormSection = (props) => {
                         <span>Szkoda czasu zmarnowanego na ból!</span><br />
                         Nie zwlekaj i zamów swój zestaw.
                     </h2>
-                    <FormContentWrapper>
+                    <FormContentWrapper  id={props.id}>
                         <FormWrapper>
                             <h3>
                                 WYPEŁNIJ FORMULARZ
