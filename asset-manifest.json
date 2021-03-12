@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/KneePowerControl_s2_v2/static/css/main.425e24a8.chunk.css",
-    "main.js": "/KneePowerControl_s2_v2/static/js/main.1b93f9de.chunk.js",
-    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.1b93f9de.chunk.js.map",
+    "main.js": "/KneePowerControl_s2_v2/static/js/main.b0e5bec7.chunk.js",
+    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.b0e5bec7.chunk.js.map",
     "runtime-main.js": "/KneePowerControl_s2_v2/static/js/runtime-main.13ca3b82.js",
     "runtime-main.js.map": "/KneePowerControl_s2_v2/static/js/runtime-main.13ca3b82.js.map",
     "static/css/2.2bb072e6.chunk.css": "/KneePowerControl_s2_v2/static/css/2.2bb072e6.chunk.css",
@@ -66,6 +66,6 @@
     "static/css/2.2bb072e6.chunk.css",
     "static/js/2.64a72953.chunk.js",
     "static/css/main.425e24a8.chunk.css",
-    "static/js/main.1b93f9de.chunk.js"
+    "static/js/main.b0e5bec7.chunk.js"
   ]
 }
