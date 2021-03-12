@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/KneePowerControl_s2_v2/static/css/main.425e24a8.chunk.css",
-    "main.js": "/KneePowerControl_s2_v2/static/js/main.068357d5.chunk.js",
-    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.068357d5.chunk.js.map",
+    "main.js": "/KneePowerControl_s2_v2/static/js/main.1b93f9de.chunk.js",
+    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.1b93f9de.chunk.js.map",
     "runtime-main.js": "/KneePowerControl_s2_v2/static/js/runtime-main.13ca3b82.js",
     "runtime-main.js.map": "/KneePowerControl_s2_v2/static/js/runtime-main.13ca3b82.js.map",
-    "static/css/2.e94e6462.chunk.css": "/KneePowerControl_s2_v2/static/css/2.e94e6462.chunk.css",
-    "static/js/2.1222b273.chunk.js": "/KneePowerControl_s2_v2/static/js/2.1222b273.chunk.js",
-    "static/js/2.1222b273.chunk.js.map": "/KneePowerControl_s2_v2/static/js/2.1222b273.chunk.js.map",
+    "static/css/2.2bb072e6.chunk.css": "/KneePowerControl_s2_v2/static/css/2.2bb072e6.chunk.css",
+    "static/js/2.64a72953.chunk.js": "/KneePowerControl_s2_v2/static/js/2.64a72953.chunk.js",
+    "static/js/2.64a72953.chunk.js.map": "/KneePowerControl_s2_v2/static/js/2.64a72953.chunk.js.map",
     "static/js/3.86b07b00.chunk.js": "/KneePowerControl_s2_v2/static/js/3.86b07b00.chunk.js",
     "static/js/3.86b07b00.chunk.js.map": "/KneePowerControl_s2_v2/static/js/3.86b07b00.chunk.js.map",
     "index.html": "/KneePowerControl_s2_v2/index.html",
-    "static/css/2.e94e6462.chunk.css.map": "/KneePowerControl_s2_v2/static/css/2.e94e6462.chunk.css.map",
+    "static/css/2.2bb072e6.chunk.css.map": "/KneePowerControl_s2_v2/static/css/2.2bb072e6.chunk.css.map",
     "static/css/main.425e24a8.chunk.css.map": "/KneePowerControl_s2_v2/static/css/main.425e24a8.chunk.css.map",
-    "static/js/2.1222b273.chunk.js.LICENSE.txt": "/KneePowerControl_s2_v2/static/js/2.1222b273.chunk.js.LICENSE.txt",
+    "static/js/2.64a72953.chunk.js.LICENSE.txt": "/KneePowerControl_s2_v2/static/js/2.64a72953.chunk.js.LICENSE.txt",
     "static/media/BackgroundTenis.dbacc98a.png": "/KneePowerControl_s2_v2/static/media/BackgroundTenis.dbacc98a.png",
     "static/media/Certificate.b4b30d9c.png": "/KneePowerControl_s2_v2/static/media/Certificate.b4b30d9c.png",
     "static/media/Cool-Power-Gel-cold.93ff60ea.png": "/KneePowerControl_s2_v2/static/media/Cool-Power-Gel-cold.93ff60ea.png",
@@ -31,7 +31,7 @@
     "static/media/background-5.fe45cd53.png": "/KneePowerControl_s2_v2/static/media/background-5.fe45cd53.png",
     "static/media/background-people.8f0514fe.png": "/KneePowerControl_s2_v2/static/media/background-people.8f0514fe.png",
     "static/media/chart.555310cb.png": "/KneePowerControl_s2_v2/static/media/chart.555310cb.png",
-    "static/media/close.557ef4d9.svg": "/KneePowerControl_s2_v2/static/media/close.557ef4d9.svg",
+    "static/media/close.10c1b71c.svg": "/KneePowerControl_s2_v2/static/media/close.10c1b71c.svg",
     "static/media/cure1.45994f27.png": "/KneePowerControl_s2_v2/static/media/cure1.45994f27.png",
     "static/media/cure2.f39167cd.png": "/KneePowerControl_s2_v2/static/media/cure2.f39167cd.png",
     "static/media/cure3.7888c286.png": "/KneePowerControl_s2_v2/static/media/cure3.7888c286.png",
@@ -39,7 +39,7 @@
     "static/media/cure5.97915c2c.png": "/KneePowerControl_s2_v2/static/media/cure5.97915c2c.png",
     "static/media/cure6.88817b31.png": "/KneePowerControl_s2_v2/static/media/cure6.88817b31.png",
     "static/media/handball-player.ca5f0b4d.png": "/KneePowerControl_s2_v2/static/media/handball-player.ca5f0b4d.png",
-    "static/media/info.6ac4a752.svg": "/KneePowerControl_s2_v2/static/media/info.6ac4a752.svg",
+    "static/media/info.46e3fe89.svg": "/KneePowerControl_s2_v2/static/media/info.46e3fe89.svg",
     "static/media/leg-1.ba91db15.png": "/KneePowerControl_s2_v2/static/media/leg-1.ba91db15.png",
     "static/media/leg-2.00283463.png": "/KneePowerControl_s2_v2/static/media/leg-2.00283463.png",
     "static/media/leg-3.ed617d81.png": "/KneePowerControl_s2_v2/static/media/leg-3.ed617d81.png",
@@ -63,9 +63,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.13ca3b82.js",
-    "static/css/2.e94e6462.chunk.css",
-    "static/js/2.1222b273.chunk.js",
+    "static/css/2.2bb072e6.chunk.css",
+    "static/js/2.64a72953.chunk.js",
     "static/css/main.425e24a8.chunk.css",
-    "static/js/main.068357d5.chunk.js"
+    "static/js/main.1b93f9de.chunk.js"
   ]
 }
