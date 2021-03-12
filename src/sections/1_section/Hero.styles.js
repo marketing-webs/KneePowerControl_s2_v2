@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+export const HeroBox = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+`;
+
 export const HeroWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 80px;
   background-image: linear-gradient(
     to right bottom,
     #4f4da4,
@@ -116,10 +123,13 @@ export const VideoWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
   display: flex;
+  align-self: center;
   margin: 20px auto;
-  @media (min-width: 1024px) {
-  transform: translateY(-52px);
-  }
+  position: absolute;
+  bottom: 38px;
+  //@media (min-width: 1024px) {
+  //transform: translateY(-52px);
+  //}
 `;
 
 export const RoundedButton = styled.div`

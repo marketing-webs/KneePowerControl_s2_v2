@@ -22,6 +22,7 @@ export const ButtonWrapper = styled(motion.div)`
   border: 2px solid #fff;
   text-align: center;
   grid-column: 1 / 13;
+  cursor: pointer;
 
   @media (min-width: 768px) {
     padding: 10px 40px;

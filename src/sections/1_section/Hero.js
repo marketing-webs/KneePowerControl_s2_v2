@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion'
 import {
+  HeroBox,
   HeroWrapper,
   TitleWrapper,
   VideoBigTitle,
@@ -12,6 +13,8 @@ import {
 import CheckButton from '../../components/Button/CheckButton';
 
 import sample from "../../assets/videos/product-video.mp4"
+import StyledButtonWithScroll from "../../components/Button/StyledButtonWithScroll";
+import {ButtonDiscountWrapper} from "../../components/Header/Header.styles";
 
 const words = [
   'Reumatyzm,',
@@ -67,6 +70,7 @@ const Hero = () => {
   };
 
   return (
+      <HeroBox>
     <HeroWrapper>
       <VideoBigTitle>KNEE POWER CONTROL</VideoBigTitle>
 
@@ -97,10 +101,11 @@ const Hero = () => {
         </video>
       </VideoWrapper>
 
-      <ButtonWrapper>
-        <CheckButton to="below" />
-      </ButtonWrapper>
     </HeroWrapper>
+        <ButtonWrapper>
+          <CheckButton to="partner" />
+        </ButtonWrapper>
+      </HeroBox>
   );
 };
 

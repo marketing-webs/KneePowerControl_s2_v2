@@ -13,6 +13,7 @@ const StyledButtonContainerWithScroll = styled(Link)`
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  cursor: pointer;
 
   span {
     font-size: 12px;
