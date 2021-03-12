@@ -25,6 +25,7 @@ const Form = styled.form`
 const InputWrapper = styled.div`
   position: relative;
   border: none;
+  border-radius: 15px;
 
   input {
     background-color: white;
@@ -120,7 +121,9 @@ const FirstForm = (props) => {
     <MainFormWrapper>
       <Form onSubmit={handleSubmit(onSubmit)} onBlur={handleChange}>
         <InputWrapper>
+          {/*css added in global styles to the controller*/}
           <Controller
+            style={{ textDecoration: 'none' }}
             as={TextField}
             id="firstName-input"
             control={control}
@@ -135,6 +138,7 @@ const FirstForm = (props) => {
           />
         </InputWrapper>
         <InputWrapper>
+          {/*css added in global styles to the controller*/}
           <Controller
             as={TextField}
             id="lastName-input"
@@ -150,6 +154,7 @@ const FirstForm = (props) => {
           />
         </InputWrapper>
         <InputWrapper>
+          {/*css added in global styles to the controller*/}
           <Controller
             as={TextField}
             id="phoneNumber-input"

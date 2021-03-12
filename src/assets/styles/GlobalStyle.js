@@ -132,6 +132,7 @@ input {
   display: none;
 }
 
+.MuiOutlinedInput-root {
+    border-radius: 15px !important;
+}
 `;
-
-
