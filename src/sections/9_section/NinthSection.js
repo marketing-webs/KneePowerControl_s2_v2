@@ -27,7 +27,7 @@ const NinthSection = () => {
                 <img src={playerMobile} alt="Player boy" />
             </PlayerMobile>
             <MainTitle>
-                Badania obrazujące <span>wpływ kuracji</span>
+                Badania obrazujące <span>wpływ kuracji </span>
                     na uszkodzony staw barkowy
                 </MainTitle>
             <ContentWrapper>

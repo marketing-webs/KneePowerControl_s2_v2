@@ -27,7 +27,7 @@ ${mediaQueries("xs")`
         opacity: 1;
         width: 100%;
         bottom: 0px;
-        height: 150px;
+        height: 110px;
         background-image: linear-gradient(
         to bottom,
         transparent,

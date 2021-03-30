@@ -14,6 +14,8 @@ const SecurityWrapper = styled.div`
     max-width: 1400px;
     margin: auto;
     display: flex;
+    align-items: center;
+  justify-content: space-around;
 `;
 
 const ImageWrapper = styled.div`
@@ -30,6 +32,7 @@ const TextWrapper = styled.div`
         text-align: left;
         margin: 0px 10px;
         font-weight: 700;
+        font-size: 16px;
     }
 `;
 

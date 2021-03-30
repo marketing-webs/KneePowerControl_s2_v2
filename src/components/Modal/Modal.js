@@ -42,17 +42,6 @@ const modal = {
 };
 
 const Modal = ({ showModal, setShowModal }) => {
-  // const data = useStaticQuery(graphql`
-  //   query ModalQuery {
-  //     productImage: file(name: { eq: "product-boxes" }) {
-  //       childImageSharp {
-  //         fluid {
-  //           ...GatsbyImageSharpFluid_tracedSVG
-  //         }
-  //       }
-  //     }
-  //   }
-  // `);
   return (
     <AnimatePresence>
       {showModal && (
@@ -85,7 +74,7 @@ const Modal = ({ showModal, setShowModal }) => {
               </ProductImageContainer>
               <DiscountBadgeWrapper>
                 <DiscountText>PROMOCJA</DiscountText>
-                <DiscountBadge>-70%</DiscountBadge>
+                <DiscountBadge>-73%</DiscountBadge>
               </DiscountBadgeWrapper>
               <BackToPageButtonWrapper>
                 <Link to="/order">

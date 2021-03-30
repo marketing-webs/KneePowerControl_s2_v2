@@ -30,7 +30,7 @@ const Header = () => {
         <TimeLeftWrapper>
           <TimeLeftText>
             Do końca promocji zostało:{" "}
-            <Timer hours={7} minutes={24} />
+            <Timer hours={0} minutes={45} />
           </TimeLeftText>
           <TimerText>
           </TimerText>

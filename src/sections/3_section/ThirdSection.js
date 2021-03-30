@@ -27,7 +27,7 @@ const ListArray = [
     },
     {
         id: 3,
-        icon: icon1,
+        icon: icon3,
         text: "Narażonych na przeciążenia stawów, np. ze względu na dużą nadwagę lub charakter pracy"
     },
     {

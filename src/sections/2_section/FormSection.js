@@ -106,7 +106,7 @@ const FormSection = (props) => {
                                 DO KOŃCA PROMOCJI:{' '}
                             </h3>
                             <SecondTimerWrapper>
-                                <TimerForm hours={7} minutes={24} />
+                                <TimerForm hours={0} minutes={45} />
                             </SecondTimerWrapper>
                             <PromotionTitle>
                                 W PROMOCJI POZOSTAŁO:{" "}

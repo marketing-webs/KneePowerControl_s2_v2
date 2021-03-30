@@ -49,11 +49,14 @@ export const StyledList = styled.ul`
         width: 100%;
         color: ${({ theme }) => theme.colors.white};
         margin: 0px 10px;
+        cursor: pointer;
+        text-decoration: underline;
 
         ${mediaQueries("sm")`
             width: 70%;
             margin: 0px 10px;
         `}
+      ll
     }
 `;
 
