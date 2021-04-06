@@ -104,8 +104,40 @@ export const FormBox = styled.div`
 
         span {
             color: #F9BA20;
+          
         }
     }
+`;
+
+export const FormWrapper = styled.div`
+  width: 100%;
+  margin-top: 30px;
+  ${mediaQueries("xs")`
+        width: 50%;
+    `}
+
+  h3 {
+    text-align: center;
+    color: #fff;
+    margin: 20px auto;
+    position: relative;
+
+    @media (min-width: 500px) {
+      ::before {
+        content: '';
+        background-image: url(${Arrow});
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: -60px;
+        top: -50px;
+        ${mediaQueries("lg")`
+                left: -30pxS
+            `}
+      }
+    }
+  }
 `;
 
 export const FormContentWrapper = styled.div`
@@ -115,35 +147,6 @@ export const FormContentWrapper = styled.div`
     ${mediaQueries("xs")`
         flex-direction: row;
     `}
-`;
-
-export const FormWrapper = styled.div`
-        width: 100%;
-        margin-top: 30px;
-    ${mediaQueries("xs")`
-        width: 50%;
-    `}
-
-    h3 {
-        text-align: center;
-        color: #fff;
-        margin: 20px auto;
-        position: relative;
-
-        ::before {
-            content: '';
-            background-image: url(${Arrow});
-            background-repeat: no-repeat;
-            position: absolute;
-            width: 100px;
-            height: 100px;
-            left: -60px;
-            top: -50px;
-            ${mediaQueries("lg")`
-                left: -30pxS
-            `}
-        }
-    }
 `;
 
 export const TimerWrapper = styled.div`
@@ -187,7 +190,7 @@ export const TopTitle = styled.h3`
     display: inline-block;
     font-size: 26px !important;
     padding: 8px 10px;
-    border-radius: 10px;
+    border-radius: 10px;  
     top: -32px;
 `;
 
@@ -195,10 +198,29 @@ export const PriceDiscount = styled.h4`
     color: white;
     font-size: 22px !important;
     margin: 20px auto;
+    
     span {
         color: #F9BA20;
         font-size: 32px !important;
         font-weight: 700;
+      position: relative;
+      &:before{
+        position: absolute;
+        content: "";
+        width: 90px;
+        height: 3px;
+        background: red;
+        top: 19px;
+        left: 0px;
+   
+        //-webkit-transform: rotate(
+        //        -9deg
+        //);
+        //-ms-transform: rotate(-9deg);
+        //transform: rotate(
+        //        -9deg
+        //);
+      }
     }
     p {
         font-size: 32px;

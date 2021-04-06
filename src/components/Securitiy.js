@@ -3,9 +3,6 @@ import styled from 'styled-components'
 import CovidLogo from '../assets/images/covid-icon.png'
 
 const Wrapper = styled.div`
-    @media (max-width: 1023px) { 
-        display: none;
-    }
     background: #F9BA20;
     padding: 15px 20px;
 `;
@@ -29,10 +26,15 @@ const ImageWrapper = styled.div`
 const TextWrapper = styled.div`
      
     p {
-        text-align: left;
-        margin: 0px 10px;
-        font-weight: 700;
-        font-size: 16px;
+      text-align: left;
+      font-size: 10px;
+      margin-left: 5px;
+      font-weight: 500;
+        @media (min-width: 500px) {
+          margin: 0px 10px;
+          font-weight: 700;
+          font-size: 16px; 
+        }
     }
 `;
 

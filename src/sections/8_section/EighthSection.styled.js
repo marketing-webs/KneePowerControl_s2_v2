@@ -12,7 +12,7 @@ export const SectionBackground = styled.div`
     #4F4DA5
   );
 
-  ${mediaQueries("xs")`
+  ${mediaQueries("lg")`
         margin-bottom: 150px;
         height: 410px;
         overflow-x: visible;
@@ -27,7 +27,9 @@ export const MainTitle = styled.h2`
 
     ${mediaQueries("xs")`
         font-size: 40px;
-        margin-bottom: 40px;
+    `}
+    ${mediaQueries("sm")`
+    margin-bottom: 40px;
     `}
 
     span {
@@ -81,8 +83,9 @@ export const FirstProductWrapper = styled.div`
     transform: translate(0px, 80px);
     
 
+
     @media (min-width: 1240px) {
-        transform: translate(70px, 40px);
+        transform: translate(70px, 20px);
     }
 `;
 
@@ -93,7 +96,7 @@ export const SecondProductWrapper = styled.div`
     transform: translateY(80px);
 
     ${mediaQueries("lg")`
-        transform: translate(-75px, 30px);
+        transform: translate(-75px, 18px);
     `}
 `;
 
@@ -109,8 +112,9 @@ export const FirstListWrapper = styled.ul`
         width: 363px;
         height: auto;
     `}
-       ${mediaQueries("sm")`
+       ${mediaQueries("lg")`
             width: 383px;
+            padding: 10px 20px 20px 50px;
         `}
 
     li {
@@ -149,8 +153,9 @@ export const SecondListWrapper = styled.ul`
         width: 363px;
         height: auto;
     `}
-        ${mediaQueries("sm")`
+        ${mediaQueries("lg")`
             width: 383px;
+            padding: 10px 20px 20px 40px;
         `}
 
     li {

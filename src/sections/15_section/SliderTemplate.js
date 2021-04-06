@@ -71,7 +71,7 @@ const RatingWrapper = styled.div`
 const StyledRating = styled.img`
     max-width: 259px;
     margin: 20px 0px 10px;
-    align-self: flex-start;
+    align-self: flex-end;
     justify-self: flex-end;
 `;
 

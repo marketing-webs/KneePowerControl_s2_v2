@@ -34,7 +34,7 @@ const MainPage = () => {
     useEffect(() => {
         setTimeout(() => {
             setShowModal(true);
-        }, 500000);
+        }, 30000);
     }, []);
 
     return (

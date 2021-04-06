@@ -6,14 +6,15 @@ import { Link } from 'react-scroll'
 import { ButtonMainText } from './Button.styles';
 
 const CheckButtonWrapper = styled(motion.div)`
- max-width: 200px;
+ max-width: 250px;
  margin: auto;
- padding: 10px 35px;
+ padding: 5px 55px;
   margin-left: ${({ marginLeft }) => (marginLeft ? marginLeft + 'px' : '0')};
   background: linear-gradient(
     132deg,
-    rgba(232, 93, 0, 1) 0%,
-    rgba(255, 0, 161, 1) 100%
+    rgba(248, 182, 34, 1) 0%,
+    rgba(248, 182, 34, 1) 0%,
+    rgba(255, 0, 161, 1) 80%
   );
   font-family: inherit;
   justify-content: center;
@@ -26,6 +27,8 @@ const CheckButtonWrapper = styled(motion.div)`
   box-shadow: 5px 5px 16px -5px rgba(0, 0, 0, 0.75);
   border: 1px solid #fff;
   text-align: center;
+  
+
 
   @media (min-width: 768px) {
     display: flex;
@@ -37,6 +40,11 @@ const StyledButtonContainerWithScroll = styled(Link)`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  span {
+    @media (min-width: 500px) {
+      font-size: 24px;
+    }
+  }
 `;
 
 const CheckButton = ({ to, ...props }) => {

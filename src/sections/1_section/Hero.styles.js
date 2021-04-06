@@ -12,7 +12,7 @@ export const HeroWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 100px;
   background-image: linear-gradient(
     to right bottom,
     #4f4da4,
@@ -126,7 +126,7 @@ export const ButtonWrapper = styled.div`
   align-self: center;
   margin: 20px auto;
   position: absolute;
-  bottom: 38px;
+  bottom: 62px;
   //@media (min-width: 1024px) {
   //transform: translateY(-52px);
   //}

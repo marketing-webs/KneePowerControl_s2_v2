@@ -68,7 +68,7 @@ h2 {
   font-size: 28px;
   text-align: left;
   margin: 10px 0px;
-  font-weight: 600;
+  font-weight: 700;
   text-shadow: 2px 2px 5px rgb(0 0 0);
       ${mediaQueries("sm")`
       font-size: 40px;

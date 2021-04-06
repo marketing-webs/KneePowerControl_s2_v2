@@ -145,7 +145,7 @@ export default class SliderCarousel extends Component {
             infinite: true,
             speed: 500,
             slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToScroll: 2,
             nextArrow: <NextArrow />,
             prevArrow: <BeforeArrow />,
             responsive: [
@@ -153,7 +153,7 @@ export default class SliderCarousel extends Component {
                     breakpoint: 1025,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        slidesToScroll: 1,
                         infinite: true,
                         dots: true
                     }

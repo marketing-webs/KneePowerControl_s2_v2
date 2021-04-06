@@ -17,9 +17,15 @@ const StyledWrapper = styled.div`
     
 
     img {
+      width: 110px;
+      height: 62px;
+      margin: 10px;
+      
+      @media (min-width: 500px) {
         width: 138px;
         height: 82px;
         margin: 5px;
+      }
     }
 `;
 

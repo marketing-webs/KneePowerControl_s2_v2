@@ -1,17 +1,27 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 import {
     SectionBackground,
+    GlobalWrapper,
     BackgroundMask,
     MainTitle,
     ContentWrapper,
     ProductWrapper,
     StyledList,
     ListItem,
-    ProductImage
+    ProductImage,
+    MainTitleMobile,
+    ProductImageDesktop,
+    MobileListItem,
 } from './SixthSection.style';
 
+import nextId from "react-id-generator";
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
+
 import Product from '../../assets/images/unique features.png'
+import {mediaQueries} from "../../assets/styles/mediaQueries";
 
 const ListArray = [
     {
@@ -36,36 +46,94 @@ const ListArray = [
     },
 ]
 
-const SixthSection = () => {
+
+
+    const SixthSection = () => {
+
+    const [isVisible, setIsVisible] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
+        // custom media queries for
+    const isMobile = mediaQueries({
+        query: '(max-device-width: 500px)'
+    })
+    const isBigScreen = mediaQueries({
+        query: '(min-device-width: 500px)'
+    })
+
     return (
         <SectionBackground>
             <BackgroundMask />
-            <MainTitle>
+            <MainTitleMobile>
                 Poznaj <span>wyjątkowe cechy</span> Knee Power Control
-            </MainTitle>
+            </MainTitleMobile>
+            <GlobalWrapper>
+            <ProductImageDesktop src={Product} alt="product image" />
+
             <ContentWrapper>
-                <ProductWrapper>
-                    <ProductImage src={Product} alt="product image" />
-                </ProductWrapper>
+                <ProductWrapper></ProductWrapper>
                 <StyledList>
+                    <MainTitle>
+                        Poznaj <span>wyjątkowe cechy</span> Knee Power Control
+                    </MainTitle>
                     {
                         ListArray.map(({ id, title, text }) => {
                             return (
-                                <ListItem key={id}>
-                                    <div>
-                                        <p>
-                                            {title}
-                                        </p>
-                                    </div>
-                                    <p>
-                                        {text}
-                                    </p>
-                                </ListItem>
+                                <div>
+                                    {isMobile &&
+                                        <MobileListItem key={id}>
+                                            <div>
+                                                <p>
+                                                    {title}
+                                                </p>
+                                                {isOpen ?
+                                                    <button
+                                                        onClick={() => {
+                                                            return (
+                                                                setIsVisible(true),
+                                                                    setIsOpen(false)
+                                                            )
+                                                        }
+                                                        }
+                                                    >Rozwiń <FontAwesomeIcon icon={faAngleDown} />
+                                                    </button>
+                                                    :
+                                                    <button
+                                                        onClick={() => {
+                                                            return(
+                                                                setIsVisible(false),
+                                                                    setIsOpen(true)
+                                                            )
+                                                        }}
+                                                    >Zwiń <FontAwesomeIcon icon={faAngleUp} />{isVisible}</button>
+                                                }
+                                            </div>
+                                            {isVisible ?
+                                                <p>{text}</p> : ""
+                                            }
+                                        </MobileListItem> }
+
+                                        {isBigScreen &&
+                                            <ListItem key={nextId}>
+                                                <div>
+                                                    <p>
+                                                        {title}
+                                                    </p>
+                                                </div>
+                                                <p>{text}</p>
+                                            </ListItem>
+                                        }
+
+
+
+
+                                </div>
                             )
                         })
                     }
+
                 </StyledList>
             </ContentWrapper>
+            </GlobalWrapper>
         </SectionBackground>
     )
 }
