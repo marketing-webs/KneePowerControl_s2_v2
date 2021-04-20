@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/KneePowerControl_s2_v2/static/css/main.425e24a8.chunk.css",
-    "main.js": "/KneePowerControl_s2_v2/static/js/main.c18bee2f.chunk.js",
-    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.c18bee2f.chunk.js.map",
+    "main.js": "/KneePowerControl_s2_v2/static/js/main.02c737d0.chunk.js",
+    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.02c737d0.chunk.js.map",
     "runtime-main.js": "/KneePowerControl_s2_v2/static/js/runtime-main.d74ec4a0.js",
     "runtime-main.js.map": "/KneePowerControl_s2_v2/static/js/runtime-main.d74ec4a0.js.map",
     "static/css/2.2bb072e6.chunk.css": "/KneePowerControl_s2_v2/static/css/2.2bb072e6.chunk.css",
@@ -25,7 +25,7 @@
     "static/media/Repair-Power-Gel-fire.c6ecd531.png": "/KneePowerControl_s2_v2/static/media/Repair-Power-Gel-fire.c6ecd531.png",
     "static/media/Repair-Power-Gel.f0b2a607.png": "/KneePowerControl_s2_v2/static/media/Repair-Power-Gel.f0b2a607.png",
     "static/media/background-5.457a7f4f.png": "/KneePowerControl_s2_v2/static/media/background-5.457a7f4f.png",
-    "static/media/background-people.3ba2b4a7.png": "/KneePowerControl_s2_v2/static/media/background-people.3ba2b4a7.png",
+    "static/media/background-people.0251d05d.png": "/KneePowerControl_s2_v2/static/media/background-people.0251d05d.png",
     "static/media/close.10c1b71c.svg": "/KneePowerControl_s2_v2/static/media/close.10c1b71c.svg",
     "static/media/cure1.9ba2911e.png": "/KneePowerControl_s2_v2/static/media/cure1.9ba2911e.png",
     "static/media/cure2.18fded81.png": "/KneePowerControl_s2_v2/static/media/cure2.18fded81.png",
@@ -57,6 +57,6 @@
     "static/css/2.2bb072e6.chunk.css",
     "static/js/2.1098809e.chunk.js",
     "static/css/main.425e24a8.chunk.css",
-    "static/js/main.c18bee2f.chunk.js"
+    "static/js/main.02c737d0.chunk.js"
   ]
 }
