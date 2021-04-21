@@ -135,4 +135,9 @@ input {
 .MuiOutlinedInput-root {
     border-radius: 15px !important;
 }
+
+.MuiInputLabel-shrink {
+  transform: translate(13px, -12px) scale(0.75) !important;     
+}
+
 `;

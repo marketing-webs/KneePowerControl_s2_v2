@@ -125,7 +125,7 @@ const Order = () => {
             animate="hover"
             whileHover={{ scale: 1.15 }}
           >
-            <StyledLink to="/order">ZAMÓW ZESTAW</StyledLink>
+            <StyledLink to="/order">ZAMÓW GOTOWY ZESTAW</StyledLink>
           </StyledLinkWrapper>
         )}
 
@@ -143,7 +143,7 @@ const Order = () => {
             animate="hover"
             whileHover={{ scale: 1.15 }}
           >
-            <Link to="/order">Zamów swoje ilości</Link>
+            <Link to="/order">ZAMÓW SWOJ ZESTAW</Link>
           </StyledLinkWrapper>
         ) : null}
       </OrderPageContainer>

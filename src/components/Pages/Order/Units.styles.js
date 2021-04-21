@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 
 export const UnitsWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
 `;

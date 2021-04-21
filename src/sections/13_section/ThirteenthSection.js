@@ -37,7 +37,7 @@ const ThirteenthSection = () => {
                     </p>
                     <DoctorSignature>
                         <p>
-                            <strong><span>Robert McKenzie-Lachman, dr n. med., </span></strong>
+                            <strong><span>Robert McKenzie-Lachman, </span></strong>
                         specjalista chirurg ortopeda, reumatolog
                         – pomysłodawca i wykonawca zestawu
                         </p>

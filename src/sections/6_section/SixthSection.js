@@ -22,6 +22,7 @@ import {faAngleDown, faAngleUp} from '@fortawesome/free-solid-svg-icons'
 
 import Product from '../../assets/images/unique features.png'
 import {mediaQueries} from "../../assets/styles/mediaQueries";
+import Accordion from "../../components/MobileAccordion/Accordion";
 
 const ListArray = [
     {
@@ -49,9 +50,6 @@ const ListArray = [
 
 
     const SixthSection = () => {
-
-    const [isVisible, setIsVisible] = useState(false);
-    const [isOpen, setIsOpen] = useState(true);
         // custom media queries for
     const isMobile = mediaQueries({
         query: '(max-device-width: 500px)'
@@ -75,57 +73,21 @@ const ListArray = [
                     <MainTitle>
                         Poznaj <span>wyjątkowe cechy</span> Knee Power Control
                     </MainTitle>
-                    {
-                        ListArray.map(({ id, title, text }) => {
+                    {isMobile &&
+                    <Accordion />
+                    }
+                    {ListArray.map(({ id, title, text }) => {
                             return (
                                 <div>
-                                    {isMobile &&
-                                        <MobileListItem key={id}>
+                                    {isBigScreen &&
+                                        <ListItem key={nextId}>
                                             <div>
                                                 <p>
                                                     {title}
                                                 </p>
-                                                {isOpen ?
-                                                    <button
-                                                        onClick={() => {
-                                                            return (
-                                                                setIsVisible(true),
-                                                                    setIsOpen(false)
-                                                            )
-                                                        }
-                                                        }
-                                                    >Rozwiń <FontAwesomeIcon icon={faAngleDown} />
-                                                    </button>
-                                                    :
-                                                    <button
-                                                        onClick={() => {
-                                                            return(
-                                                                setIsVisible(false),
-                                                                    setIsOpen(true)
-                                                            )
-                                                        }}
-                                                    >Zwiń <FontAwesomeIcon icon={faAngleUp} />{isVisible}</button>
-                                                }
                                             </div>
-                                            {isVisible ?
-                                                <p>{text}</p> : ""
-                                            }
-                                        </MobileListItem> }
-
-                                        {isBigScreen &&
-                                            <ListItem key={nextId}>
-                                                <div>
-                                                    <p>
-                                                        {title}
-                                                    </p>
-                                                </div>
-                                                <p>{text}</p>
-                                            </ListItem>
-                                        }
-
-
-
-
+                                            <p>{text}</p>
+                                        </ListItem>}
                                 </div>
                             )
                         })

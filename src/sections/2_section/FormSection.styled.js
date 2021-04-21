@@ -204,28 +204,22 @@ export const PriceDiscount = styled.h4`
         font-size: 32px !important;
         font-weight: 700;
       position: relative;
-      &:before{
-        position: absolute;
-        content: "";
-        width: 90px;
-        height: 3px;
-        background: red;
-        top: 19px;
-        left: 0px;
-   
-        //-webkit-transform: rotate(
-        //        -9deg
-        //);
-        //-ms-transform: rotate(-9deg);
-        //transform: rotate(
-        //        -9deg
-        //);
-      }
+
     }
     p {
         font-size: 32px;
         font-weight: 700;
         display: inline-block;
+        position: relative;
+      &:before{
+        position: absolute;
+        content: "";
+        width: 95px;
+        height: 3px;
+        background: red;
+        top: 22px;
+        left: 0px;
+      }
     }
 `;
 

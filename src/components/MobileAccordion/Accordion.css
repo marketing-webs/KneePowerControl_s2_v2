@@ -1,0 +1,77 @@
+@media (min-width: 500px) {
+    .item{
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .item {
+        display: block;
+        background: white;
+        width: 90%;
+        margin: auto;
+        padding: 5px;
+        border-radius: 15px;
+        text-align: left;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        padding-bottom: 15px;
+    }
+    .item button {
+        font-size: 13px;
+        padding: 0px;
+        line-height: 18px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        width: 70px;
+        margin: auto;
+        align-self: center;
+        color: white;
+        font-weight: 600;
+        border-bottom: 1px solid white;
+        align-self: center;
+        outline: none;
+    }
+
+    .item div {
+        background-color: #27A449;
+        padding: 15px;
+        border-radius: 15px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .item div p {
+        font-size: 16px;
+        font-weight: 700;
+        z-index: 99;
+        color: white;
+
+    }
+    .item p {
+        font-size: 16px;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(0,1,0,1);
+    }
+
+    .item .hidden {
+        height: auto;
+        max-height: 0;
+        padding: 4px;
+        transition: all 0.5s cubic-bezier(0,1,0,1);
+
+    }
+    .item .visible {
+        height: auto;
+        max-height: 9999px;
+        padding: 4px;
+        transition: all 0.5s cubic-bezier(1,0,1,0);
+    }
+}
+
