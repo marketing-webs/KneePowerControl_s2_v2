@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/KneePowerControl_s2_v2/static/css/main.a25ab863.chunk.css",
-    "main.js": "/KneePowerControl_s2_v2/static/js/main.d66e95b7.chunk.js",
-    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.d66e95b7.chunk.js.map",
+    "main.js": "/KneePowerControl_s2_v2/static/js/main.e7b77009.chunk.js",
+    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.e7b77009.chunk.js.map",
     "runtime-main.js": "/KneePowerControl_s2_v2/static/js/runtime-main.bf0add2b.js",
     "runtime-main.js.map": "/KneePowerControl_s2_v2/static/js/runtime-main.bf0add2b.js.map",
     "static/css/2.2bb072e6.chunk.css": "/KneePowerControl_s2_v2/static/css/2.2bb072e6.chunk.css",
-    "static/js/2.5cbc5ef5.chunk.js": "/KneePowerControl_s2_v2/static/js/2.5cbc5ef5.chunk.js",
-    "static/js/2.5cbc5ef5.chunk.js.map": "/KneePowerControl_s2_v2/static/js/2.5cbc5ef5.chunk.js.map",
+    "static/js/2.9caa28f7.chunk.js": "/KneePowerControl_s2_v2/static/js/2.9caa28f7.chunk.js",
+    "static/js/2.9caa28f7.chunk.js.map": "/KneePowerControl_s2_v2/static/js/2.9caa28f7.chunk.js.map",
     "static/js/3.0d99dfd5.chunk.js": "/KneePowerControl_s2_v2/static/js/3.0d99dfd5.chunk.js",
     "static/js/3.0d99dfd5.chunk.js.map": "/KneePowerControl_s2_v2/static/js/3.0d99dfd5.chunk.js.map",
     "index.html": "/KneePowerControl_s2_v2/index.html",
     "static/css/2.2bb072e6.chunk.css.map": "/KneePowerControl_s2_v2/static/css/2.2bb072e6.chunk.css.map",
     "static/css/main.a25ab863.chunk.css.map": "/KneePowerControl_s2_v2/static/css/main.a25ab863.chunk.css.map",
-    "static/js/2.5cbc5ef5.chunk.js.LICENSE.txt": "/KneePowerControl_s2_v2/static/js/2.5cbc5ef5.chunk.js.LICENSE.txt",
+    "static/js/2.9caa28f7.chunk.js.LICENSE.txt": "/KneePowerControl_s2_v2/static/js/2.9caa28f7.chunk.js.LICENSE.txt",
     "static/media/BackgroundTenis.4e90a286.png": "/KneePowerControl_s2_v2/static/media/BackgroundTenis.4e90a286.png",
     "static/media/Certificate.6062be10.png": "/KneePowerControl_s2_v2/static/media/Certificate.6062be10.png",
     "static/media/Cool-Power-Gel-cold.84e2d15b.png": "/KneePowerControl_s2_v2/static/media/Cool-Power-Gel-cold.84e2d15b.png",
@@ -55,8 +55,8 @@
   "entrypoints": [
     "static/js/runtime-main.bf0add2b.js",
     "static/css/2.2bb072e6.chunk.css",
-    "static/js/2.5cbc5ef5.chunk.js",
+    "static/js/2.9caa28f7.chunk.js",
     "static/css/main.a25ab863.chunk.css",
-    "static/js/main.d66e95b7.chunk.js"
+    "static/js/main.e7b77009.chunk.js"
   ]
 }
