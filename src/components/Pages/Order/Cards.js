@@ -13,6 +13,8 @@ const Cards = () => {
     handleStandardSelection,
     handleOptimumSelection,
   } = useContext(CardContext);
+
+
   return (
     <CardsContainer>
       <Card

@@ -11,8 +11,8 @@ const buttonVariants = {
   hover: {
     scale: 1.1,
     transition: {
-      duration: 0.3,
-      yoyo: 10,
+      duration: 0.5,
+      yoyo: 50,
     },
   },
 };
@@ -94,7 +94,7 @@ export const StyledParagraph = styled(motion.span)`
   }
 `;
 
-const Order = () => {
+const Order = (props) => {
   const { cardSelected, setCardSelected } = useContext(CardContext);
   const {
     unitsSelected,

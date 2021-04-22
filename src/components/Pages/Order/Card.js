@@ -12,6 +12,7 @@ import {
   ProductItems,
   ProductItem,
   ProductPhoto,
+  CardScroll,
 } from './Cards.styles';
 
 const card = {

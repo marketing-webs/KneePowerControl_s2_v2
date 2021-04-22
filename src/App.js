@@ -29,9 +29,6 @@ function App() {
               <GlobalStyles />
               <Switch>
                 <Route path="/sets" component={Sets} />
-                {/* <Route>
-                  {setPhoneNumber ? <Redirect to="/sets" /> : <MainPage />}
-                </Route> */}
                 <Route path="/order" component={Order} />
                 <Route path="/summary" component={Summary} />
                 <Route exact path="/" component={MainPage} />

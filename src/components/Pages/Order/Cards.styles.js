@@ -10,6 +10,7 @@ export const CardsContainer = styled.div`
   margin: 50px auto 0 auto;
 `;
 
+
 export const CardWrapper = styled(motion.div)`
   cursor: pointer;
   background: rgb(77, 75, 162);

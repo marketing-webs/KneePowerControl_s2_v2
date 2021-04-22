@@ -1,8 +1,10 @@
 import React, { createContext, useContext, useState } from "react";
 
 import { UnitsContext } from "./unitsContext";
+import * as Scroll from 'react-scroll';
 
 const CardContext = createContext();
+let scroll = Scroll.animateScroll;
 
 const CardContextProvider = ({ children }) => {
   const [basicSelected, setBasicSelected] = useState(false);
@@ -20,6 +22,7 @@ const CardContextProvider = ({ children }) => {
     setDeluxSelected(false);
     setCardSelected(true);
     setUnitsSelected(false);
+    scroll.scrollToBottom();
   };
 
   const handleStandardSelection = () => {
