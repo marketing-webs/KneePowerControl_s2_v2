@@ -1,9 +1,8 @@
 import React, {useState} from 'react';
-import {MobileListItem} from "../../sections/6_section/SixthSection.style";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faAngleDown, faAngleUp} from "@fortawesome/free-solid-svg-icons";
-import {mediaQueries} from "../../assets/styles/mediaQueries";
 import './Accordion.css'
+import nextId from "react-id-generator";
 
 const ListArray = [
     {
@@ -38,9 +37,6 @@ const Accordion = () => {
         if (isVisible === i) {
             return setIsVisible(null)
         }
-        // else if (isVisible !== i) {
-        //     return setIsVisible(null)
-        // }
         setIsVisible(i)
     }
 
@@ -64,39 +60,6 @@ const Accordion = () => {
                     <p className={isVisible === i ? "visible" : 'hidden'}>
                         {item.text}
                     </p>
-                    {/*<div>*/}
-                    {/*    <p>*/}
-                    {/*        {item.title}*/}
-                    {/*    </p>*/}
-                    {/*    <button onClick={() => toggle(i)}>*/}
-                    {/*        Set toggle*/}
-                    {/*    </button>*/}
-                    {/*    /!*{isOpen ?*!/*/}
-                    {/*    /!*    <button*!/*/}
-                    {/*    /!*        onClick={() => {*!/*/}
-                    {/*    /!*            return (*!/*/}
-                    {/*    /!*                setIsVisible(true),*!/*/}
-                    {/*    /!*                    setIsOpen(false)*!/*/}
-                    {/*    /!*            )*!/*/}
-                    {/*    /!*        }*!/*/}
-                    {/*    /!*        }*!/*/}
-                    {/*    /!*    >Rozwiń <FontAwesomeIcon icon={faAngleDown} />*!/*/}
-                    {/*    /!*    </button>*!/*/}
-                    {/*    /!*    :*!/*/}
-                    {/*    /!*    <button*!/*/}
-                    {/*    /!*        onClick={() => {*!/*/}
-                    {/*    /!*            return(*!/*/}
-                    {/*    /!*                setIsVisible(false),*!/*/}
-                    {/*    /!*                    setIsOpen(true)*!/*/}
-                    {/*    /!*            )*!/*/}
-                    {/*    /!*        }}*!/*/}
-                    {/*    /!*    >Zwiń <FontAwesomeIcon icon={faAngleUp} />{isVisible}</button>*!/*/}
-                    {/*    /!*}*!/*/}
-                    {/*</div>*/}
-                    {/*/!*<p>{item.text}</p>*!/*/}
-                    {/*{isVisible ?*/}
-                    {/*    <p>{item.text}</p> : ""*/}
-                    {/*}*/}
                 </div>
             )})
     );

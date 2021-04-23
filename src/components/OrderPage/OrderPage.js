@@ -12,6 +12,7 @@ import {
 import React from 'react';
 import OrderForm from './OrderForm';
 import Partners from './Partners';
+import FirstForm from "../../sections/2_section/FirstForm";
 
 const importantInfo = {
   hidden: { x: 450, opacity: 0 },

@@ -32,6 +32,7 @@ const CardContextProvider = ({ children }) => {
     setDeluxSelected(false);
     setCardSelected(true);
     setUnitsSelected(false);
+    scroll.scrollToBottom();
   };
 
   const handleOptimumSelection = () => {
@@ -41,6 +42,7 @@ const CardContextProvider = ({ children }) => {
     setDeluxSelected(false);
     setCardSelected(true);
     setUnitsSelected(false);
+    scroll.scrollToBottom();
   };
 
   const handleDeluxSelection = () => {
@@ -50,6 +52,7 @@ const CardContextProvider = ({ children }) => {
     setDeluxSelected(true);
     setCardSelected(true);
     setUnitsSelected(false);
+    scroll.scrollToBottom();
   };
 
   return (

@@ -37,7 +37,6 @@ const InputWrapper = styled.div`
       outline: none;
     }
   }
-
 `;
 
 const StyledPopover = styled.img`

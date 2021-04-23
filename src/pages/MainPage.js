@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Securitiy from '../components/Securitiy'
 import Hero from '../sections/1_section/Hero'
 import Header from '../components/Header/Header'
@@ -23,6 +23,8 @@ const MainPage = () => {
 
     const [showModal, setShowModal] = useState(false);
     const [mouseTouchedTop, setMouseTouchedTop] = useState(false);
+    const footerEl = useRef(null);
+
 
     const handleMouseMove = (ev) => {
         if (ev.screenY <= 115 && !mouseTouchedTop) {
@@ -31,10 +33,14 @@ const MainPage = () => {
         }
     };
 
+
+
     useEffect(() => {
-        setTimeout(() => {
-            setShowModal(true);
-        }, 30000);
+        if (footerEl.current.getBoundingClientRect().top < 300) {
+            setTimeout(() => {
+                setShowModal(true);
+            }, 3);
+        }
     }, []);
 
     return (
@@ -55,7 +61,7 @@ const MainPage = () => {
             <ForteenthSection />
             <FifteenthSection />
             <FormSection partner="partner" id="partner"/>
-            <Footer />
+            <Footer innerRef={footerEl} />
         </div>
     )
 }

@@ -11,10 +11,7 @@ import {
   ButtonWrapper,
 } from './Hero.styles';
 import CheckButton from '../../components/Button/CheckButton';
-
 import sample from "../../assets/videos/product-video.mp4"
-import StyledButtonWithScroll from "../../components/Button/StyledButtonWithScroll";
-import {ButtonDiscountWrapper} from "../../components/Header/Header.styles";
 
 const words = [
   'Reumatyzm,',
@@ -96,7 +93,7 @@ const Hero = () => {
       </TitleWrapper>
 
       <VideoWrapper>
-        <video className='videoTag' autoPlay loop muted>
+        <video className='videoTag' autoplay muted playsinline loop muted>
           <source src={sample} type='video/mp4' />
         </video>
       </VideoWrapper>

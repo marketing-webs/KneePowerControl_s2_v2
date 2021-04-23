@@ -8,9 +8,9 @@ import {
 
 import logo from '../../assets/images/footer-logo.png'
 
-const Footer = () => {
+const Footer = ({innerRef}) => {
     return (
-        <SectionBackground>
+        <SectionBackground ref={innerRef}>
             <ContentWrapper>
                 <img src={logo} alt="logo" />
                 <StyledList>

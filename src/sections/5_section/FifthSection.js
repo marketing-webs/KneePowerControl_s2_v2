@@ -18,7 +18,7 @@ import icon3 from '../../assets/images/week-3.png'
 import icon4 from '../../assets/images/week-4.png'
 
 const ListArray = [
-    {
+     {
         id: 1,
         title: "Tydzień 1",
         icon: icon1,

@@ -6,6 +6,41 @@ import { TextField } from '@material-ui/core';
 import { SecondaryFormWrapper, SubmitButton } from './OrderPage.styles';
 import { FormContext } from '../../context/formContext';
 import { withRouter, useHistory } from 'react-router-dom'
+import infoIcon from "../../assets/images/info.svg";
+import ReactTooltip from "react-tooltip";
+import styled from "styled-components";
+
+
+
+
+const InputWrapper = styled.div`
+  position: relative;
+  border: none;
+  border-radius: 15px;
+
+  input {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px 10px;
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+`;
+
+const StyledPopover = styled.img`
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 35%;
+  right: 10px;
+`;
+
+const PopoverText = styled.p`
+  width: 250px;
+`;
 
 const zipCodeRegExp = /[0-9]{2}-[0-9]{3}/;
 
@@ -59,7 +94,6 @@ const SecondaryForm = () => {
     }
 
     history.push("/summary");
-    console.log(history)
 
   };
 
@@ -67,6 +101,74 @@ const SecondaryForm = () => {
     <>
       <SecondaryFormWrapper>
         <form onSubmit={handleSubmit(onSubmit)}>
+          <InputWrapper>
+            {/*css added in global styles to the controller*/}
+            <Controller
+                style={{ textDecoration: 'none' }}
+                as={TextField}
+                id="firstName-input"
+                control={control}
+                placeholder="Imię"
+                label={errors.firstName ? errors.firstName?.message : 'Imię'}
+                fullWidth
+                variant="outlined"
+                name="firstName"
+                margin="normal"
+                defaultValue={firstName ? firstName : ''}
+                error={!!errors.firstName}
+            />
+          </InputWrapper>
+          <InputWrapper>
+            {/*css added in global styles to the controller*/}
+            <Controller
+                as={TextField}
+                id="lastName-input"
+                control={control}
+                placeholder="Nazwisko"
+                label={errors.lastName ? errors.lastName?.message : 'Nazwisko'}
+                fullWidth
+                variant="outlined"
+                name="lastName"
+                defaultValue={lastName ? lastName : ""}
+                error={!!errors.lastName}
+                margin="normal"
+            />
+          </InputWrapper>
+          <InputWrapper>
+            {/*css added in global styles to the controller*/}
+            <Controller
+                as={TextField}
+                id="phoneNumber-input"
+                control={control}
+                fullWidth
+                name="phoneNumber"
+                placeholder="Numer telefonu"
+                type="tel"
+                variant="outlined"
+                label={
+                  errors.phoneNumber
+                      ? errors.phoneNumber?.message
+                      : 'Numer telefonu'
+                }
+                margin="normal"
+                defaultValue={phoneNumber ? phoneNumber : ""}
+                error={!!errors.phoneNumber}
+            />
+            <StyledPopover
+                alt="info icon"
+                src={infoIcon}
+                data-tip
+                data-for="happyFace"
+            />
+            <ReactTooltip id="happyFace" type="info" place="left">
+              <PopoverText>
+                Dlaczego muszę podać nr telefonu? Podany nr zostanie automatycznie
+                autoryzowany do kontaktu z naszym biurem obsługi klienta. Na
+                podany numer może również kontaktować się firma kurierska w celu
+                umówienia dogodnego dla Państwa terminu odbioru przesyłki
+              </PopoverText>
+            </ReactTooltip>
+          </InputWrapper>
           <Controller
             as={TextField}
             control={control}

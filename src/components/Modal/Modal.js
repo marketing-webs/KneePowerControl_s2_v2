@@ -77,7 +77,7 @@ const Modal = ({ showModal, setShowModal }) => {
                 <DiscountBadge>-73%</DiscountBadge>
               </DiscountBadgeWrapper>
               <BackToPageButtonWrapper>
-                <Link to="/order">
+                <Link to="/sets">
                   <StyledButtonWithLink mainText="CHCĘ ODEBRAĆ ZNIŻKĘ"
                   >
                   </StyledButtonWithLink>
