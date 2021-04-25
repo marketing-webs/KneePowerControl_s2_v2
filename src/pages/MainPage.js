@@ -32,16 +32,31 @@ const MainPage = () => {
             setShowModal(true);
         }
     };
-
-
-
     useEffect(() => {
-        if (footerEl.current.getBoundingClientRect().top < 300) {
+        window.addEventListener("scroll", displayModalAfterReachingEndOfPage);
+    });
+
+    const displayModalAfterReachingEndOfPage = () => {
+        const documentHeight = window.document.body.offsetHeight;
+        const viewPortHeight = window.innerHeight;
+        let scrolledDistanceFromTop = window.pageYOffset;
+        let reachEndOfPage =
+            documentHeight - 700 - viewPortHeight < scrolledDistanceFromTop;
+        if (reachEndOfPage) {
             setTimeout(() => {
                 setShowModal(true);
-            }, 3);
+            }, 30000);
+
+            //REMOVE EVENT LISTENER
+            window.removeEventListener("scroll", displayModalAfterReachingEndOfPage);
         }
-    }, []);
+    };
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowModal(true);
+        }, 3);
+    }, [])
 
     return (
         <div onMouseMove={handleMouseMove}>
@@ -59,9 +74,9 @@ const MainPage = () => {
             <SectionBackground />
             <DoctrorWrapperSection />
             <ForteenthSection />
-            <FifteenthSection />
+            <FifteenthSection innerRef={footerEl}/>
             <FormSection partner="partner" id="partner"/>
-            <Footer innerRef={footerEl} />
+            <Footer  />
         </div>
     )
 }

@@ -8,14 +8,6 @@ import {
   ButtonWrapper,
 } from './Button.styles';
 
-// const StyledButtonContainerWithLink = styled(Link)`
-//   color: #fff;
-//   text-decoration: none;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   flex-direction: column;
-// `;
 
 const StyledButtonWithLink = ({
   mainText,
@@ -24,7 +16,6 @@ const StyledButtonWithLink = ({
   to,
   ...props
 }) => {
-  console.log(to)
   return (
     <ButtonWrapper whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
       {mainText && <ButtonMainText>{mainText}</ButtonMainText>}

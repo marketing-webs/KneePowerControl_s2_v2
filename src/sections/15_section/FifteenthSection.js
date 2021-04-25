@@ -9,9 +9,9 @@ import {
 } from './FifteenthSection.styled'
 
 
-const FifteenthSection = () => {
+const FifteenthSection = ({innerRef}) => {
     return (
-        <SectionBackground>
+        <SectionBackground  ref={innerRef}>
             <ContentWrapper>
                 <MainTitle>
                     Zapoznaj się z <span>opiniami zadowolonych

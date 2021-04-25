@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Card from './Card';
 import { CardsContainer } from './Cards.styles';
 import { CardContext } from '../../../context/cardContext';
@@ -6,6 +6,8 @@ import { CardContext } from '../../../context/cardContext';
 import padBox from '../../../assets/images/pad_box.png';
 import gelBoxes from '../../../assets/images/zestaw-power-gel.png';
 import setBoxes from '../../../assets/images/zestaw-knee-power-control.png';
+import {FormContext} from "../../../context/formContext";
+import {CustomPrices} from "../../../context/customPrices";
 
 const Cards = () => {
   const {
@@ -14,14 +16,33 @@ const Cards = () => {
     handleOptimumSelection,
   } = useContext(CardContext);
 
+    const {
+        firstName,
+        lastName,
+        phoneNumber,
+    } = useContext(FormContext);
+
+    const {
+        initialPrice,
+        setInitialPrice,
+        reducedPrice,
+        setReducedPrice,
+    } = useContext(CustomPrices);
+
+    console.log(firstName)
+    if (firstName) {
+        setInitialPrice('317 zł')
+        setReducedPrice('137 zł')
+    }
+
 
   return (
     <CardsContainer>
       <Card
         title="STABILIZATOR KNEE POWER PAD"
         percentage="7%"
-        oldPrice="400 zł"
-        newPrice="125 zł - 70% taniej"
+        oldPrice={initialPrice ? initialPrice : "400 zł"}
+        newPrice={reducedPrice ? reducedPrice : "125 zł - 73% taniej"}
         onClick={handleBasicSelection}
         photo={padBox}
         items={['1 stabilizator']}
@@ -29,8 +50,8 @@ const Cards = () => {
       <Card
         title="ZESTAW POWER GEL"
         percentage="7%"
-        oldPrice="400 zł"
-        newPrice="125 zł - 70% taniej"
+        oldPrice={initialPrice ? initialPrice : "400 zł"}
+        newPrice={reducedPrice ? reducedPrice : "125 zł - 73% taniej"}
         onClick={handleStandardSelection}
         photo={gelBoxes}
         items={['1 żel rozgrzewający', '+', '1 żel chłodzący']}
@@ -38,8 +59,8 @@ const Cards = () => {
       <Card
         title="ZESTAW PODSTAWOWY KNEE POWER CONTROL"
         percentage="7%"
-        oldPrice="400 zł"
-        newPrice="125 zł - 70% taniej"
+        oldPrice={initialPrice ? initialPrice : "400 zł"}
+        newPrice={reducedPrice ? reducedPrice : "125 zł - 73% taniej"}
         onClick={handleOptimumSelection}
         photo={setBoxes}
         items={[

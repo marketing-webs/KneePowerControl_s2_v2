@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { motion } from 'framer-motion'
 import {
   HeroBox,
@@ -12,6 +12,7 @@ import {
 } from './Hero.styles';
 import CheckButton from '../../components/Button/CheckButton';
 import sample from "../../assets/videos/product-video.mp4"
+import enableInlineVideo from 'iphone-inline-video';
 
 const words = [
   'Reumatyzm,',
@@ -93,8 +94,16 @@ const Hero = () => {
       </TitleWrapper>
 
       <VideoWrapper>
-        <video className='videoTag' autoplay muted playsinline loop muted>
-          <source src={sample} type='video/mp4' />
+        <video src={sample}
+               type='video/mp4'
+               preload="yes"
+               className='video'
+               width="100%"
+               height="auto"
+               autoPlay
+               playsInline
+               loop
+               muted>
         </video>
       </VideoWrapper>
 

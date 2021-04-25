@@ -15,6 +15,7 @@ import { CardContextProvider } from './context/cardContext';
 import { UnitsContextProvider } from './context/unitsContext';
 import Summary from './pages/summary';
 import ScrollToTop from "./components/ScrollToTop";
+import {CustomPricesContextProvider} from "./context/customPrices";
 
 function App() {
   // const { setPhoneNumber } = useContext(FormContext);
@@ -24,6 +25,7 @@ function App() {
       <UnitsContextProvider>
         <CardContextProvider>
           <FormContextProvider>
+          <CustomPricesContextProvider>
             <ScrollToTop>
             <div className="App">
               <GlobalStyles />
@@ -35,6 +37,7 @@ function App() {
               </Switch>
             </div>
             </ScrollToTop>
+          </CustomPricesContextProvider>
           </FormContextProvider>
         </CardContextProvider>
       </UnitsContextProvider>
