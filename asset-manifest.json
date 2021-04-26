@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/KneePowerControl_s2_v2/static/css/main.cb6374c7.chunk.css",
-    "main.js": "/KneePowerControl_s2_v2/static/js/main.ea2904e6.chunk.js",
-    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.ea2904e6.chunk.js.map",
+    "main.js": "/KneePowerControl_s2_v2/static/js/main.35462052.chunk.js",
+    "main.js.map": "/KneePowerControl_s2_v2/static/js/main.35462052.chunk.js.map",
     "reactPlayerDailyMotion.js": "/KneePowerControl_s2_v2/static/js/reactPlayerDailyMotion.096a07df.chunk.js",
     "reactPlayerDailyMotion.js.map": "/KneePowerControl_s2_v2/static/js/reactPlayerDailyMotion.096a07df.chunk.js.map",
     "reactPlayerFacebook.js": "/KneePowerControl_s2_v2/static/js/reactPlayerFacebook.2339b93d.chunk.js",
@@ -84,6 +84,6 @@
     "static/css/15.5a8b5562.chunk.css",
     "static/js/15.9d6eed1b.chunk.js",
     "static/css/main.cb6374c7.chunk.css",
-    "static/js/main.ea2904e6.chunk.js"
+    "static/js/main.35462052.chunk.js"
   ]
 }
