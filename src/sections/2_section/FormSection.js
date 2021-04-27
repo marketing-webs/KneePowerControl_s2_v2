@@ -99,7 +99,7 @@ const FormSection = (props) => {
                                 Otrzymaj<span> Knee Power Control </span>za jedyne:
                             </h4>
                             <PriceDiscount>
-                                <span>137 zł</span> zamiast <p>317 zł!</p>
+                                <span>140 zł</span> zamiast <p>320 zł!</p>
                             </PriceDiscount>
 
                             <h3>

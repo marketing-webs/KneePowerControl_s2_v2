@@ -103,7 +103,7 @@ export const ProductWrapper = styled.div`
 
 export const ProductPhotoWrapper = styled.div`
   position: absolute;
-  top: -7%;
+  top: 5%;
   left: 50%;
   transform: translateX(-50%);
 `;

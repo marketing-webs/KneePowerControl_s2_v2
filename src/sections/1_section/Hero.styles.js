@@ -26,7 +26,7 @@ export const HeroWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: -1;
+  //z-index: -1;
   overflow: hidden;
 `;
 
@@ -109,15 +109,15 @@ export const VideoUpperSubtitle = styled(motion.h3)`
 
 
 export const VideoWrapper = styled.div`
-
+  border: 3px solid #F9BA20;
+  @media (min-width: 1024px) {
+    max-width: 1000px;
+  }
+  width: 100%;
+  height: auto;
+  margin: auto;
   video {
-    border: 3px solid #F9BA20;
-    @media (min-width: 1024px) {
-      max-width: 1000px;
-     }
-    width: 100%;
-    height: auto;
-    margin: auto;
+ 
   }
 `;
 

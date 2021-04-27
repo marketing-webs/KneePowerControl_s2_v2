@@ -15,6 +15,8 @@ const Units = () => {
     setAkgUnits,
   } = useContext(UnitsContext);
 
+  let Go
+
   return (
     <UnitsWrapper>
       <Unit

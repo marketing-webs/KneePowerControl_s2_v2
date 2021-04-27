@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
+export const ContentWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  h2 {
+    margin: 50px 50px;
+    font-size: 28px;
+  }
+`;
+
 export const UnitsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;

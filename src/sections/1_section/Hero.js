@@ -13,6 +13,10 @@ import {
 import CheckButton from '../../components/Button/CheckButton';
 import sample from "../../assets/videos/product-video.mp4"
 import enableInlineVideo from 'iphone-inline-video';
+import { Player, BigPlayButton, ControlBar } from 'video-react';
+import poster from '../../assets/images/poster.png'
+
+import ReactPlayer from 'react-player/lazy'
 
 const words = [
   'Reumatyzm,',
@@ -94,17 +98,22 @@ const Hero = () => {
       </TitleWrapper>
 
       <VideoWrapper>
-        <video src={sample}
-               type='video/mp4'
-               preload="yes"
-               className='video'
-               width="100%"
-               height="auto"
-               autoPlay
-               playsInline
-               loop
-               muted>
-        </video>
+        <Player
+            className='video'
+            src={sample}
+            poster={poster}
+            playsInline
+            autoPlay
+            muted
+            loop
+        >
+          <BigPlayButton position="center" />
+          <ControlBar
+              autoHide={false}
+              disableCompletely={true}
+              className="my-class"
+          />
+        </Player>
       </VideoWrapper>
 
     </HeroWrapper>

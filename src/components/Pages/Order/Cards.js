@@ -27,40 +27,54 @@ const Cards = () => {
         setInitialPrice,
         reducedPrice,
         setReducedPrice,
+        initialStabilizerPrice,
+        setInitialStabilizerPrice,
+        stabilizerPercentage,
+        setStabilizerPercentage,
     } = useContext(CustomPrices);
 
-    console.log(firstName)
-    if (firstName) {
-        setInitialPrice('317 zł')
-        setReducedPrice('137 zł')
-    }
+
+    // The Price after submitting form
+    // if (firstName) {
+    //     // Stabilizer Price
+    //
+    //     initialStabilizerPrice()
+    //     setInitialStabilizerPrice()
+    //     stabilizerPercentage()
+    //     setStabilizerPercentage( )
+    //
+    //
+    //     setInitialPrice('317 zł')
+    //     setReducedPrice('137 zł')
+    //     setStabilizerPercentage('8%')
+    // }
 
 
   return (
     <CardsContainer>
       <Card
         title="STABILIZATOR KNEE POWER PAD"
-        percentage="7%"
-        oldPrice={initialPrice ? initialPrice : "400 zł"}
-        newPrice={reducedPrice ? reducedPrice : "125 zł - 73% taniej"}
+        percentage="8%"
+        oldPrice={"160 zł"}
+        newPrice={"70 zł"}
         onClick={handleBasicSelection}
         photo={padBox}
         items={['1 stabilizator']}
       />
       <Card
         title="ZESTAW POWER GEL"
-        percentage="7%"
-        oldPrice={initialPrice ? initialPrice : "400 zł"}
-        newPrice={reducedPrice ? reducedPrice : "125 zł - 73% taniej"}
+        percentage="10%"
+        oldPrice={"160 zł"}
+        newPrice={"70 zł"}
         onClick={handleStandardSelection}
         photo={gelBoxes}
         items={['1 żel rozgrzewający', '+', '1 żel chłodzący']}
       />
       <Card
         title="ZESTAW PODSTAWOWY KNEE POWER CONTROL"
-        percentage="7%"
-        oldPrice={initialPrice ? initialPrice : "400 zł"}
-        newPrice={reducedPrice ? reducedPrice : "125 zł - 73% taniej"}
+        percentage="82%"
+        oldPrice={"320 zł"}
+        newPrice={"140 zł"}
         onClick={handleOptimumSelection}
         photo={setBoxes}
         items={[

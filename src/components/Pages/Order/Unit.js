@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
 import {
   UnitName,
   UnitNumber,
@@ -9,9 +9,27 @@ import {
   Price,
   Info,
 } from "./Units.styles";
+import {UnitsContext} from "../../../context/unitsContext";
 
 const Unit = ({ name, unitNumber, handleInc, handleDec, price }) => {
+  const {
+    setTotalUnitPrice,
+    detoxUnits,
+    burnUnits,
+    akgUnits,
+
+  } = useContext(UnitsContext);
+
   let newPrice = price * parseInt(unitNumber);
+  let detox = detoxUnits * 70;
+  let burn = burnUnits * 35;
+  let akg = akgUnits * 35;
+  let total = detox + burn + akg;
+
+
+  useEffect(() => {
+    setTotalUnitPrice(total)
+  }, [total])
 
   return (
     <UnitWrapper>

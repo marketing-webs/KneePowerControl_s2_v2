@@ -26,40 +26,38 @@ const MainPage = () => {
     const footerEl = useRef(null);
 
 
-    const handleMouseMove = (ev) => {
-        if (ev.screenY <= 115 && !mouseTouchedTop) {
-            setMouseTouchedTop(true);
-            setShowModal(true);
-        }
-    };
-    useEffect(() => {
-        window.addEventListener("scroll", displayModalAfterReachingEndOfPage);
-    });
+    // Modal popup
+    // const handleMouseMove = (ev) => {
+    //     if (ev.screenY <= 115 && !mouseTouchedTop) {
+    //         setMouseTouchedTop(true);
+    //         setShowModal(true);
+    //         console.log("top popup")
+    //     }
+    // };
+    //
+    // useEffect(() => {
+    //     window.addEventListener("scroll", displayModalAfterReachingEndOfPage);
+    // });
+    //
+    // const displayModalAfterReachingEndOfPage = () => {
+    //     const documentHeight = window.document.body.offsetHeight;
+    //     const viewPortHeight = window.innerHeight;
+    //     let scrolledDistanceFromTop = window.pageYOffset;
+    //     let reachEndOfPage =
+    //         documentHeight - 500 - viewPortHeight < scrolledDistanceFromTop;
+    //     if (reachEndOfPage) {
+    //         setTimeout(() => {
+    //             setShowModal(true);
+    //             console.log("bottom popup")
+    //         }, 30000);
+    //         //REMOVE EVENT LISTENER
+    //         window.removeEventListener("scroll", displayModalAfterReachingEndOfPage);
+    //     }
+    // };
 
-    const displayModalAfterReachingEndOfPage = () => {
-        const documentHeight = window.document.body.offsetHeight;
-        const viewPortHeight = window.innerHeight;
-        let scrolledDistanceFromTop = window.pageYOffset;
-        let reachEndOfPage =
-            documentHeight - 700 - viewPortHeight < scrolledDistanceFromTop;
-        if (reachEndOfPage) {
-            setTimeout(() => {
-                setShowModal(true);
-            }, 30000);
-
-            //REMOVE EVENT LISTENER
-            window.removeEventListener("scroll", displayModalAfterReachingEndOfPage);
-        }
-    };
-
-    useEffect(() => {
-        setTimeout(() => {
-            setShowModal(true);
-        }, 3);
-    }, [])
 
     return (
-        <div onMouseMove={handleMouseMove}>
+        <div>
             <Modal showModal={showModal} setShowModal={setShowModal} />
             <Securitiy />
             <Header />

@@ -6,6 +6,9 @@ import { motion } from 'framer-motion';
 import { CardContext } from '../../../context/cardContext';
 import { UnitsContext } from '../../../context/unitsContext';
 import Units from './Units';
+import * as Scroll from 'react-scroll';
+
+let scroll = Scroll.animateScroll;
 
 const buttonVariants = {
   hover: {
@@ -109,13 +112,16 @@ const Order = (props) => {
     setUnitsSelected(true);
   };
 
+  const handleMove = () => {
+    scroll.scrollToBottom();
+  }
+
   return (
     <ContentWrapper>
       <OrderPageContainer>
         <Title>Tylko dzisiaj!</Title>
         <SubTitle>
-          Wybierz opcję, która najbardziej Ci odpowiada i zaoszczędź nawet do
-          -88%!
+          Wybierz opcję, która najbardziej Ci odpowiada i zaoszczędź!
         </SubTitle>
         <Cards />
 
@@ -134,18 +140,24 @@ const Order = (props) => {
           onClick={handleUnitsClick}
         >
           LUB UŁÓŻ SWÓJ ZESTAW SAM WG. WŁASNYCH POTRZEB
+
         </StyledParagraph>
 
         {unitsSelected && <Units />}
+
         {burnUnits >= 1 && detoxUnits >= 1 && akgUnits >= 1 && !cardSelected ? (
           <StyledLinkWrapper
             variants={buttonVariants}
             animate="hover"
             whileHover={{ scale: 1.15 }}
           >
-            <Link to="/order">ZAMÓW SWOJ ZESTAW</Link>
+            <Link to="/order">ZAMÓW SWÓJ ZESTAW</Link>
           </StyledLinkWrapper>
-        ) : null}
+        ): null}
+        {burnUnits >= 1 && detoxUnits >= 1 && akgUnits >= 1 && !cardSelected ? handleMove
+        (): null}
+
+
       </OrderPageContainer>
     </ContentWrapper>
   );
